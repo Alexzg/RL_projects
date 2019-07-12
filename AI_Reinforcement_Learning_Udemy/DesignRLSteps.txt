@@ -1,0 +1,18 @@
+# 1 - Prediction Problem:
+	Given policy, find V(s)
+	Code: Goal-> Find V(s)
+		given: policy 
+		V(s) = initial value
+		for t in range(max_iterations):
+			states, actions, rewards = play_game(policy)
+			update V(s) given (states, actions, rewards) using the algorithm you learned
+		print useful info (change in V(s) vs. time, final V(s), policy)
+
+# 2 - Control Problem:
+	Find the 'optimal policy' and the corresponding 'value' function
+	Code: Goal-> Find the optimal policy (policy may not be explicitly represented)
+		initialize value function and policy
+		for t in range (max_iterations):
+			states, actions, rewards = play_game(policy)
+			update value function and policy according to (states, actions, rewards) using the algorithm you learned
+		print useful info (change in V(s) vs. time, final V(s), final policy)
